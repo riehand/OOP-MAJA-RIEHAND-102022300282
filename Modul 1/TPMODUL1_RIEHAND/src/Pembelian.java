@@ -43,6 +43,7 @@ class Penerbangan {
     }
 
     public void tampilDaftarPenerbangan() {
+        sysout
         System.out.println("Nomor Penerbangan: " + nomorPenerbangan);
         System.out.println("Bandara Keberangkatan: " + bandaraKeberangkatan);
         System.out.println("Bandara Tujuan: " + bandaraTujuan);
