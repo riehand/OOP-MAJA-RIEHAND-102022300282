@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="345.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryController">
+    <children>
+        <TableView fx:id="tableView" layoutX="50" layoutY="50" prefHeight="200" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="columnAlbumName" text="Album Name" />
+                <TableColumn fx:id="columnArtist" text="Artist" />
+                <TableColumn fx:id="columnTotal" text="Total" />
+                <TableColumn fx:id="columnAvailable" text="Available" />
+            </columns>
+        </TableView>
+        <Label layoutX="476.0" layoutY="50.0" text="Judul Album" />
+        <TextField fx:id="txtAlbumName" layoutX="476.0" layoutY="67.0" prefHeight="25.0" prefWidth="249.0" />
+        <Label layoutX="475.0" layoutY="106.0" text="Nama Artis" />
+        <TextField fx:id="txtArtist" layoutX="476.0" layoutY="123.0" prefHeight="25.0" prefWidth="249.0" />
+        <Label layoutX="476.0" layoutY="158.0" text="Jumlah Total" />
+        <TextField fx:id="txtTotal" layoutX="476.0" layoutY="175.0" prefHeight="25.0" prefWidth="249.0" />
+        <Label layoutX="479.0" layoutY="210.0" text="Jumlah Rented" />
+        <TextField fx:id="txtAvailable" layoutX="476.0" layoutY="227.0" prefHeight="25.0" prefWidth="249.0" />
+        
+        <!-- Action Buttons -->
+        <Button layoutX="543.0" layoutY="285.0" onAction="#handleAdd" text="Tambah" />
+        <Button layoutX="441.0" layoutY="285.0" onAction="#handleDelete" text="Hapus" />
+        <Button layoutX="670.0" layoutY="285.0" onAction="#handleUpdate" text="Update" />
+        
+        <!-- Rent Button -->
+        <Button layoutX="50.0" layoutY="285.0" onAction="#handleRent" text="Rent Selected" />
+      <Label layoutX="342.0" layoutY="14.0" text="Zepp's Listening bar" />
+    </children>
+</AnchorPane>
